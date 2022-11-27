@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "@hapi/hapi": "^21.0.0"
+  },
+  "name": "submission-bookself-api",
+  "version": "1.0.0",
+  "description": "this is a project for final submission for dicoding ",
+  "main": "server.js",
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nurwandi/bookshelf-submission.git"
+  },
+  "author": "qolbinurwandi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nurwandi/bookshelf-submission/issues"
+  },
+  "homepage": "https://github.com/nurwandi/bookshelf-submission#readme"
+}
