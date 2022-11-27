@@ -156,6 +156,7 @@ const editBookByIdHandler = (request, h) => {
       status: 'fail',
       message: 'Gagal memperbarui buku. Mohon isi nama buku',
     });
+
     // Bad Request
     response.code(400);
     return response;
@@ -170,7 +171,6 @@ const editBookByIdHandler = (request, h) => {
     return response;
   }
   if (index !== -1) {
-    // only insertedAt not updated
     books[index] = {
       ...books[index],
       name,
@@ -215,7 +215,7 @@ const deleteBookByIdHandler = (request, h) => {
     return response;
   }
 
-  // If ID is not found, return error
+  // no id -> error
   const response = h.response({
     status: 'fail',
     message: 'Buku gagal dihapus. Id tidak ditemukan',
